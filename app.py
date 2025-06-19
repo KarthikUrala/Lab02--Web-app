@@ -1,8 +1,15 @@
 from flask import Flask, request, jsonify
 import logging
+import sys
 
+# Configure Flask app
 app = Flask(__name__)
-logging.basicConfig(filename='logins.log', level=logging.INFO)
+
+# Set up logging to stdout for Azure capture
+log_handler = logging.StreamHandler(sys.stdout)
+log_handler.setLevel(logging.INFO)
+app.logger.addHandler(log_handler)
+app.logger.setLevel(logging.INFO)
 
 @app.route('/login', methods=['POST'])
 def login():

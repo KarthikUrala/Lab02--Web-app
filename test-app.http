@@ -1,0 +1,17 @@
+### Successful login
+POST https://flask-login-detector-cddbhueqg9gkceh3.canadacentral-01.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "secure123"
+}
+
+### Failed login
+POST https://flask-login-detector-cddbhueqg9gkceh3.canadacentral-01.azurewebsites.net/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "wrongpassword"
+}
