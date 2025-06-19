@@ -6,6 +6,8 @@ This project demonstrates how to deploy a Python Flask application to Azure App 
 
 The application includes a `/login` endpoint that logs both successful and failed login attempts. The logs are sent to Azure Monitor via Diagnostic Settings, and a KQL query is used to detect potential brute-force login attacks. An alert rule is configured to notify via email when more than 5 failed login attempts occur within a 5-minute window.
 
+### Youtube link- https://youtu.be/B99fBld-olI
+
 ---
 
 ## 📦 Project Structure
@@ -63,5 +65,4 @@ Evaluation frequency: Every 1 minute
 Action Group: Email notification to the student
 
 Severity: 2 (High)
-
 
