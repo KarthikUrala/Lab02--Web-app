@@ -11,11 +11,14 @@ The application includes a `/login` endpoint that logs both successful and faile
 ---
 
 ## 📦 Project Structure
-├── app.py # Flask application with login route
-├── requirements.txt # Python dependencies
-├── test-app.http # Test file for REST Client (VS Code)
-├── README.md # This file
 
+├── app.py # Flask application with login route
+
+├── requirements.txt # Python dependencies
+
+├── test-app.http # Test file for REST Client (VS Code)
+
+├── README.md # This file
 
 
 ---
